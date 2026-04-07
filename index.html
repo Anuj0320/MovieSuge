@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMind | AI Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie<span>Mind</span></h1>
+            <p>Precise movie suggestions based on your taste</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="movieInput" placeholder="Type a movie you like (e.g. Avatar)...">
+                <button id="recommendBtn">Get Recommendations</button>
+            </div>
+
+            <div id="loader" class="hidden">
+                <div class="spinner"></div>
+            </div>
+
+            <h2 class="section-title">Top Recommendations</h2>
+            <section id="recommendations" class="movie-grid">
+                </section>
+        </main>
+
+        <footer>
+            <p>Built with Machine Learning & TMDB Dataset</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
